@@ -4,16 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class SplashActivity extends AppCompatActivity {
+
+    private CircleImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        circleImageView = findViewById(R.id.circle_splash_id);
+
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                irParaLogin();
+            }
+        });
 
         getSupportActionBar().hide();
 
@@ -22,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 irParaLogin();
             }
-        }, 2000);
+        }, 3000);
     }
 
     private void irParaLogin() {
