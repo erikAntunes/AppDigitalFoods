@@ -27,20 +27,34 @@ public class CreditCardsActivity extends AppCompatActivity {
 
         List<CreditCard> listaCreditCard = new ArrayList<>();
         CreditCard creditCard1 = new CreditCard();
-        creditCard1.setNome("Mastercard Itaú");
-        creditCard1.setNumero("4444 4444 4444 4444");
+        creditCard1.setNome("MasterCard");
+        creditCard1.setNumero("1234  5676  22332  7766");
         listaCreditCard.add(creditCard1);
 
         CreditCard creditCard2 = new CreditCard();
-        creditCard2.setNome("Visa Santander");
-        creditCard2.setNumero("5555 5555 5555 5555");
+        creditCard2.setNome("Visa");
+        creditCard2.setNumero("2343  6754  3245  0987");
         listaCreditCard.add(creditCard2);
+
+        CreditCard creditCard3 = new CreditCard();
+        creditCard3.setNome("RedCard");
+        creditCard3.setNumero("8323  8844  2345  9904");
+        listaCreditCard.add(creditCard3);
+
+        CreditCard creditCard4 = new CreditCard();
+        creditCard4.setNome("BlackCard");
+        creditCard4.setNumero("0099  8839  9922  0948");
+        listaCreditCard.add(creditCard4);
+
+
+        listaCreditCard.add(creditCard1);
         listaCreditCard.add(creditCard2);
+        listaCreditCard.add(creditCard3);
+        listaCreditCard.add(creditCard4);
+        listaCreditCard.add(creditCard1);
         listaCreditCard.add(creditCard2);
-        listaCreditCard.add(creditCard2);
-        listaCreditCard.add(creditCard2);
-        listaCreditCard.add(creditCard2);
-        listaCreditCard.add(creditCard2);
+        listaCreditCard.add(creditCard3);
+        listaCreditCard.add(creditCard4);
 
         CreditCardAdapter creditCardAdapter = new CreditCardAdapter(listaCreditCard, this);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
