@@ -17,17 +17,13 @@ import java.util.List;
 
 public class DetalheAdapter extends RecyclerView.Adapter<DetalheAdapter.ViewHolderDetalhe> {
 
-    private List<Pratos> listaPratos1;
+    private List<Pratos> listaPratos;
 
     private PratosListener pratosListener;
 
 
-    public DetalheAdapter(List<Pratos> listaPratos) {
-        this.listaPratos1 = listaPratos;
-    }
-
     public DetalheAdapter(List<Pratos> listaPratos, PratosListener pratosListener) {
-        this.listaPratos1 = listaPratos;
+        this.listaPratos = listaPratos;
         this.pratosListener = pratosListener;
     }
 
@@ -47,13 +43,13 @@ public class DetalheAdapter extends RecyclerView.Adapter<DetalheAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull DetalheAdapter.ViewHolderDetalhe holder, final int position) {
 
-        holder.nomePrato.setText(listaPratos1.get(position).getNomePrato());
-        holder.fotoPrato.setImageResource(listaPratos1.get(position).getFotoPrato());
+        holder.nomePrato.setText(listaPratos.get(position).getNomePrato());
+        holder.fotoPrato.setImageResource(listaPratos.get(position).getFotoPrato());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pratosListener.onPratoClicado(listaPratos1.get(position));
+                pratosListener.onPratoClicado(listaPratos.get(position));
             }
         });
 
@@ -61,7 +57,7 @@ public class DetalheAdapter extends RecyclerView.Adapter<DetalheAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return listaPratos1.size();
+        return listaPratos.size();
     }
 
     public class ViewHolderDetalhe extends RecyclerView.ViewHolder {
