@@ -42,31 +42,27 @@ public class RestauranteDetalheActivity extends AppCompatActivity implements Pra
 
         List<Pratos> listaPratos = new ArrayList<>();
         Pratos prato1 = new Pratos();
-        prato1.setNomePrato("prato de comida 1");
-        prato1.setFotoPrato(R.drawable.restaurant3);
-        prato1.setDescricaoPrato("Descrição teste Descrição teste Descrição teste Descrição teste Descrição teste Descrição teste Descrição teste Descrição teste ");
+        prato1.setNomePrato("Picanha Cheddar Bacon");
+        prato1.setFotoPrato(R.drawable.restaurant1_prato1);
+        prato1.setDescricaoPrato("Picanha Cheddar Bacon. Com muita picanha, muito cheddar, muito bacon. ");
         listaPratos.add(prato1);
 
         Pratos prato2 = new Pratos();
-        prato2.setNomePrato("prato de comida 2");
-        prato2.setFotoPrato(R.drawable.restaurant1);
-        prato2.setDescricaoPrato("Descrição testeDescrição testeDescrição testeDescrição testeDescrição testeDescrição testeDescrição teste");
+        prato2.setNomePrato("2 clássicos por R$14,90");
+        prato2.setFotoPrato(R.drawable.restaurant1_prato2);
+        prato2.setDescricaoPrato("Os preferidos do McDonald’s para você combinar como quiser.");
         listaPratos.add(prato2);
 
         Pratos prato3 = new Pratos();
-        prato3.setNomePrato("prato de comida 3");
-        prato3.setFotoPrato(R.drawable.restaurant2);
+        prato3.setNomePrato("Novo McFlurry e McShake Sonho de Valsa");
+        prato3.setFotoPrato(R.drawable.restaurant1_prato3);
+        prato3.setDescricaoPrato("Experimente e ame você também.");
         listaPratos.add(prato3);
+
+        listaPratos.add(prato1);
+        listaPratos.add(prato2);
         listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
-        listaPratos.add(prato3);
+
 
         DetalheAdapter detalheAdapter = new DetalheAdapter(listaPratos, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
