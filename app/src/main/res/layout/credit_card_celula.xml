@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/colorPrimaryDarkRed"
     android:elevation="2dp"
     android:layout_margin="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/credit_card_name_txt"
@@ -20,7 +24,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="8dp"
             android:textSize="24sp"
-            android:textColor="@color/black"
+            android:textColor="@color/colorPrimaryRed"
             android:textStyle="bold"/>
 
         <TextView
@@ -30,7 +34,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="8dp"
             android:textSize="18sp"
-            android:textColor="@color/grey"
+            android:textColor="@color/colorPrimaryRed"
             />
 
     </LinearLayout>
