@@ -10,25 +10,24 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.digitalhousefoods.R;
-import com.example.digitalhousefoods.RestauranteDetalheActivity;
 import com.example.digitalhousefoods.entidades.Pratos;
 import com.example.digitalhousefoods.interfaces.PratosListener;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DetalheAdapter extends RecyclerView.Adapter<DetalheAdapter.ViewHolderDetalhe> {
 
-    private List<Pratos> listaPratos;
+    private List<Pratos> listaPratos1;
+
     private PratosListener pratosListener;
 
 
     public DetalheAdapter(List<Pratos> listaPratos) {
-        this.listaPratos = listaPratos;
+        this.listaPratos1 = listaPratos;
     }
 
     public DetalheAdapter(List<Pratos> listaPratos, PratosListener pratosListener) {
-        this.listaPratos = listaPratos;
+        this.listaPratos1 = listaPratos;
         this.pratosListener = pratosListener;
     }
 
@@ -48,13 +47,13 @@ public class DetalheAdapter extends RecyclerView.Adapter<DetalheAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull DetalheAdapter.ViewHolderDetalhe holder, final int position) {
 
-        holder.nomePrato.setText(listaPratos.get(position).getNomePrato());
-        holder.fotoPrato.setImageResource(listaPratos.get(position).getFotoPrato());
+        holder.nomePrato.setText(listaPratos1.get(position).getNomePrato());
+        holder.fotoPrato.setImageResource(listaPratos1.get(position).getFotoPrato());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pratosListener.onPratoClicado(listaPratos.get(position));
+                pratosListener.onPratoClicado(listaPratos1.get(position));
             }
         });
 
@@ -62,7 +61,7 @@ public class DetalheAdapter extends RecyclerView.Adapter<DetalheAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return listaPratos.size();
+        return listaPratos1.size();
     }
 
     public class ViewHolderDetalhe extends RecyclerView.ViewHolder {
