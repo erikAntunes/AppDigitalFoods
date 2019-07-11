@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
-    android:background="@color/colorPrimaryDarkRed">
+    android:background="@drawable/food_background">
 
   <de.hdodenhof.circleimageview.CircleImageView
       android:id="@+id/circle_splash_id"
       android:layout_width="200dp"
       android:layout_height="200dp"
       android:src="@drawable/dh_logo"
-      android:layout_gravity="bottom|center"
-      android:layout_marginBottom="50dp"
+      android:layout_gravity="center"
+      android:layout_marginBottom="40dp"
       />
 
 </FrameLayout>
