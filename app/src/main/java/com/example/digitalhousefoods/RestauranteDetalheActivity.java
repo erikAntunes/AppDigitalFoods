@@ -84,11 +84,33 @@ public class RestauranteDetalheActivity extends AppCompatActivity implements Pra
         listaPratos2.add(prato2_2);
         listaPratos2.add(prato3_2);
 
+        List<Pratos> listaPratos3 = new ArrayList<>();
+        Pratos prato1_3 = new Pratos();
+        prato1_3.setNomePrato("Calzone 4 Queijos");
+        prato1_3.setFotoPrato(R.drawable.restaurant3_prato1);
+        prato1_3.setDescricaoPrato("Mussarela, Parmesao, Requeijao, Gorgonzola, Oregano, Molho");
+        listaPratos3.add(prato1_3);
+
+        Pratos prato2_3 = new Pratos();
+        prato2_3.setNomePrato("Pizza Bauru");
+        prato2_3.setFotoPrato(R.drawable.restaurant3_prato2);
+        prato2_3.setDescricaoPrato("Mussarela, presunto, requeijão e tomate.");
+        listaPratos3.add(prato2_3);
+
+        Pratos prato3_3 = new Pratos();
+        prato3_3.setNomePrato("Frango Grelhado");
+        prato3_3.setFotoPrato(R.drawable.restaurant3_prato3);
+        prato3_3.setDescricaoPrato("Requeijão, frango, azeitona preta, mussarela, tomate, azeite e manjericão.");
+        listaPratos3.add(prato3_3);
+        listaPratos3.add(prato1_3);
+        listaPratos3.add(prato2_3);
+        listaPratos3.add(prato3_3);
 
 
 
 
-        DetalheAdapter detalheAdapter = new DetalheAdapter(listaPratos2, this);
+
+        DetalheAdapter detalheAdapter = new DetalheAdapter(listaPratos1, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
         RecyclerView recyclerView = findViewById(R.id.detalhe_recycler_view);
         recyclerView.setAdapter(detalheAdapter);
