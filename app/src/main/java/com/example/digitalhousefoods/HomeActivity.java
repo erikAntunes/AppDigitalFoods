@@ -33,23 +33,33 @@ public class HomeActivity extends AppCompatActivity implements RestaurantesListe
         restaurante1.setAddressRestaurant("Alameda Amazonas, 253, Alphaville - 06454-070 Barueri - São Paulo");
         restaurante1.setCloseRestaurant("24 horas");
 
-        Pratos prato1_1 = new Pratos();
-        prato1_1.setNomePrato("Picanha Cheddar Bacon");
-        prato1_1.setFotoPrato(R.drawable.restaurant1_prato1);
-        prato1_1.setDescricaoPrato("Picanha Cheddar Bacon. Com muita picanha, muito cheddar, muito bacon. ");
-        restaurante1.getListaDePratos().add(prato1_1);
+        Pratos prato1_mcDonalds = new Pratos();
+        prato1_mcDonalds.setNomePrato("Picanha Cheddar Bacon");
+        prato1_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato1);
+        prato1_mcDonalds.setDescricaoPrato("Picanha Cheddar Bacon. Com muita picanha, muito cheddar, muito bacon. ");
+        restaurante1.getListaDePratos().add(prato1_mcDonalds);
 
-        Pratos prato2_1 = new Pratos();
-        prato2_1.setNomePrato("2 clássicos por R$14,90");
-        prato2_1.setFotoPrato(R.drawable.restaurant1_prato2);
-        prato2_1.setDescricaoPrato("Os preferidos do McDonald’s para você combinar como quiser.");
-        restaurante1.getListaDePratos().add(prato2_1);
+        Pratos prato2_mcDonalds = new Pratos();
+        prato2_mcDonalds.setNomePrato("2 clássicos por R$14,90");
+        prato2_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato2);
+        prato2_mcDonalds.setDescricaoPrato("Os preferidos do McDonald’s para você combinar como quiser.");
+        restaurante1.getListaDePratos().add(prato2_mcDonalds);
 
-        Pratos prato3_1 = new Pratos();
-        prato3_1.setNomePrato("Novo McFlurry e McShake Sonho de Valsa");
-        prato3_1.setFotoPrato(R.drawable.restaurant1_prato3);
-        prato3_1.setDescricaoPrato("Experimente e ame você também.");
-        restaurante1.getListaDePratos().add(prato3_1);
+        Pratos prato3_mcDonalds = new Pratos();
+        prato3_mcDonalds.setNomePrato("Novo McFlurry e McShake Sonho de Valsa");
+        prato3_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato3);
+        prato3_mcDonalds.setDescricaoPrato("Experimente e ame você também.");
+        restaurante1.getListaDePratos().add(prato3_mcDonalds);
+
+        Pratos prato4_mcDonalds = new Pratos();
+        prato4_mcDonalds.setNomePrato("MC Fritas");
+        prato4_mcDonalds.setDescricaoPrato("A batata frita mais famosa do mundo. Deliciosas batatas selecionadas, fritas, crocantes por fora, macias por dentro, douradas, irresistíveis, saborosas, famosas, e todos os outros adjetivos positivos que você quiser dar. ");
+        prato4_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato4);
+        restaurante1.getListaDePratos().add(prato4_mcDonalds);
+        restaurante1.getListaDePratos().add(prato1_mcDonalds);
+        restaurante1.getListaDePratos().add(prato2_mcDonalds);
+        restaurante1.getListaDePratos().add(prato3_mcDonalds);
+        restaurante1.getListaDePratos().add(prato4_mcDonalds);
 
         listaRestaurante.add(restaurante1);
 
@@ -59,23 +69,33 @@ public class HomeActivity extends AppCompatActivity implements RestaurantesListe
         restaurante2.setAddressRestaurant("Av Interlagos, 2255, Shopping Interlagos - São Paulo");
         restaurante2.setCloseRestaurant("Fecha às 23:50");
 
-        Pratos prato1_2 = new Pratos();
-        prato1_2.setNomePrato("Wings, Ribs & Fries");
-        prato1_2.setFotoPrato(R.drawable.restaurant2_prato1);
-        prato1_2.setDescricaoPrato("Felicidade em dose tripla: são cinco Kookaburra Wings®, cinco costelas da nossa ribs e uma Joey Aussie Fries. Acompanhados de molhos Blue Cheese e Ranch. Escolha também um molho para sua ribs, entre Barbecue e Billabong.");
-        restaurante2.getListaDePratos().add(prato1_2);
+        Pratos prato1_outBack = new Pratos();
+        prato1_outBack.setNomePrato("Wings, Ribs & Fries");
+        prato1_outBack.setFotoPrato(R.drawable.restaurant2_prato1);
+        prato1_outBack.setDescricaoPrato("Felicidade em dose tripla: são cinco Kookaburra Wings®, cinco costelas da nossa ribs e uma Joey Aussie Fries. Acompanhados de molhos Blue Cheese e Ranch. Escolha também um molho para sua ribs, entre Barbecue e Billabong.");
+        restaurante2.getListaDePratos().add(prato1_outBack);
 
-        Pratos prato2_2 = new Pratos();
-        prato2_2.setNomePrato("Ridgy Didgy Mini Burgers");
-        prato2_2.setFotoPrato(R.drawable.restaurant2_prato2);
-        prato2_2.setDescricaoPrato("Seis suculentos mini burgers com queijo especial, ketchup, mostarda, picles e cebola roxa. Tudo preparado e temperado no melhor estilo Outback. Servidos com fritas.");
-        restaurante2.getListaDePratos().add(prato2_2);
+        Pratos prato2_outBack = new Pratos();
+        prato2_outBack.setNomePrato("Ridgy Didgy Mini Burgers");
+        prato2_outBack.setFotoPrato(R.drawable.restaurant2_prato2);
+        prato2_outBack.setDescricaoPrato("Seis suculentos mini burgers com queijo especial, ketchup, mostarda, picles e cebola roxa. Tudo preparado e temperado no melhor estilo Outback. Servidos com fritas.");
+        restaurante2.getListaDePratos().add(prato2_outBack);
 
-        Pratos prato3_2 = new Pratos();
-        prato3_2.setNomePrato("Grilled Peppered Strip");
-        prato3_2.setFotoPrato(R.drawable.restaurant2_prato3);
-        prato3_2.setDescricaoPrato("São 240g do melhor steak grelhado de New York, preparado com tempero de pimentas pretas moídas e servido com molho Cabernet.");
-        restaurante2.getListaDePratos().add(prato3_2);
+        Pratos prato3_outBack = new Pratos();
+        prato3_outBack.setNomePrato("Grilled Peppered Strip");
+        prato3_outBack.setFotoPrato(R.drawable.restaurant2_prato3);
+        prato3_outBack.setDescricaoPrato("São 240g do melhor steak grelhado de New York, preparado com tempero de pimentas pretas moídas e servido com molho Cabernet.");
+        restaurante2.getListaDePratos().add(prato3_outBack);
+
+        Pratos prato4_outBack = new Pratos();
+        prato4_outBack.setNomePrato("Chocolate Thunder From Down Under");
+        prato4_outBack.setDescricaoPrato("Nosso brownie exclusivo e quentinho com sorvete de baunilha e deliciosa calda de chocolate preparada diariamente no Outback. Finalizado com chantilly e raspas de chocolate. *Contém nozes ou derivado de nozes.");
+        prato4_outBack.setFotoPrato(R.drawable.restaurant2_prato4);
+        restaurante2.getListaDePratos().add(prato4_outBack);
+        restaurante2.getListaDePratos().add(prato1_outBack);
+        restaurante2.getListaDePratos().add(prato2_outBack);
+        restaurante2.getListaDePratos().add(prato3_outBack);
+        restaurante2.getListaDePratos().add(prato4_outBack);
 
         listaRestaurante.add(restaurante2);
 
@@ -86,24 +106,37 @@ public class HomeActivity extends AppCompatActivity implements RestaurantesListe
         restaurante3.setCloseRestaurant("Fecha às 22:00");
 
 
-        Pratos prato1_3 = new Pratos();
-        prato1_3.setNomePrato("Calzone 4 Queijos");
-        prato1_3.setFotoPrato(R.drawable.restaurant3_prato1);
-        prato1_3.setDescricaoPrato("Mussarela, Parmesao, Requeijao, Gorgonzola, Oregano, Molho");
-        restaurante3.getListaDePratos().add(prato1_3);
+        Pratos prato1_dominoS = new Pratos();
+        prato1_dominoS.setNomePrato("Calzone 4 Queijos");
+        prato1_dominoS.setFotoPrato(R.drawable.restaurant3_prato1);
+        prato1_dominoS.setDescricaoPrato("Mussarela, Parmesao, Requeijao, Gorgonzola, Oregano, Molho");
+        restaurante3.getListaDePratos().add(prato1_dominoS);
 
-        Pratos prato2_3 = new Pratos();
-        prato2_3.setNomePrato("Pizza Bauru");
-        prato2_3.setFotoPrato(R.drawable.restaurant3_prato2);
-        prato2_3.setDescricaoPrato("Mussarela, presunto, requeijão e tomate.");
-        restaurante3.getListaDePratos().add(prato2_3);
+        Pratos prato2_dominoS = new Pratos();
+        prato2_dominoS.setNomePrato("Pizza Bauru");
+        prato2_dominoS.setFotoPrato(R.drawable.restaurant3_prato2);
+        prato2_dominoS.setDescricaoPrato("Mussarela, presunto, requeijão e tomate.");
+        restaurante3.getListaDePratos().add(prato2_dominoS);
 
-        Pratos prato3_3 = new Pratos();
-        prato3_3.setNomePrato("Frango Grelhado");
-        prato3_3.setFotoPrato(R.drawable.restaurant3_prato3);
-        prato3_3.setDescricaoPrato("Requeijão, frango, azeitona preta, mussarela, tomate, azeite e manjericão.");
-        restaurante3.getListaDePratos().add(prato3_3);
+        Pratos prato3_dominoS = new Pratos();
+        prato3_dominoS.setNomePrato("Frango Grelhado");
+        prato3_dominoS.setFotoPrato(R.drawable.restaurant3_prato3);
+        prato3_dominoS.setDescricaoPrato("Requeijão, frango, azeitona preta, mussarela, tomate, azeite e manjericão.");
+        restaurante3.getListaDePratos().add(prato3_dominoS);
 
+        Pratos prato4_dominoS = new Pratos();
+        prato4_dominoS.setNomePrato("Pizza de Chocolate");
+        prato4_dominoS.setDescricaoPrato("Brotinho de chocolate com granulado.");
+        prato4_dominoS.setFotoPrato(R.drawable.restaurant3_prato4);
+        restaurante3.getListaDePratos().add(prato4_dominoS);
+        restaurante3.getListaDePratos().add(prato1_dominoS);
+        restaurante3.getListaDePratos().add(prato2_dominoS);
+        restaurante3.getListaDePratos().add(prato3_dominoS);
+        restaurante3.getListaDePratos().add(prato4_dominoS);
+
+        listaRestaurante.add(restaurante3);
+        listaRestaurante.add(restaurante1);
+        listaRestaurante.add(restaurante2);
         listaRestaurante.add(restaurante3);
 
         HomeAdapter homeAdapter = new HomeAdapter(listaRestaurante, this);

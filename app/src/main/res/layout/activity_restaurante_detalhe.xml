@@ -46,12 +46,19 @@
         android:text="Pratos principais"
         android:textSize="28sp"
         android:textStyle="bold"
+        android:layout_marginBottom="8dp"
         android:textColor="@color/colorPrimaryRed"
         app:layout_constraintBottom_toTopOf="@+id/detalhe_recycler_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/detalhe_recycler_view"
         app:layout_constraintTop_toBottomOf="@+id/detalhe_foto_restaurante" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDarkRed"></LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/detalhe_recycler_view"
