@@ -3,7 +3,11 @@ package com.example.digitalhousefoods.entidades;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.digitalhousefoods.adapters.DetalheAdapter;
+
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Restaurante implements Serializable {
 
@@ -11,6 +15,15 @@ public class Restaurante implements Serializable {
     private String nameRestaurant;
     private String addressRestaurant;
     private String closeRestaurant;
+    private List<Pratos> listaDePratos = new ArrayList<>();
+
+    public List<Pratos> getListaDePratos() {
+        return listaDePratos;
+    }
+
+    public void setListaDePratos(List<Pratos> listaDePratos) {
+        this.listaDePratos = listaDePratos;
+    }
 
     public int getImageRestaurant() {
         return imageRestaurant;
