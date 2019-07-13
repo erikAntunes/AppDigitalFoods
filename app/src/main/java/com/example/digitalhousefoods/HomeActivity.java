@@ -140,7 +140,7 @@ public class HomeActivity extends AppCompatActivity implements RestaurantesListe
         listaRestaurante.add(restaurante3);
 
         HomeAdapter homeAdapter = new HomeAdapter(listaRestaurante, this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
         RecyclerView recyclerView = findViewById(R.id.home_recycler_view);
         recyclerView.setAdapter(homeAdapter);
         recyclerView.setLayoutManager(layoutManager);
