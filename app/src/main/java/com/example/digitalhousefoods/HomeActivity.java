@@ -36,19 +36,19 @@ public class HomeActivity extends AppCompatActivity implements RestaurantesListe
         Pratos prato1_mcDonalds = new Pratos();
         prato1_mcDonalds.setNomePrato("Picanha Cheddar Bacon");
         prato1_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato1);
-        prato1_mcDonalds.setDescricaoPrato("Picanha Cheddar Bacon. Com muita picanha, muito cheddar, muito bacon. ");
+        prato1_mcDonalds.setDescricaoPrato("Um delicioso hambúrguer feito com picanha, 4 fatias crocantes de bacon, nosso cremoso cheddar, cebola crispy e pão com gergelim. ");
         restaurante1.getListaDePratos().add(prato1_mcDonalds);
 
         Pratos prato2_mcDonalds = new Pratos();
-        prato2_mcDonalds.setNomePrato("2 clássicos por R$14,90");
+        prato2_mcDonalds.setNomePrato("Big Mac");
         prato2_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato2);
-        prato2_mcDonalds.setDescricaoPrato("Os preferidos do McDonald’s para você combinar como quiser.");
+        prato2_mcDonalds.setDescricaoPrato("Não existe nada igual. Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim.");
         restaurante1.getListaDePratos().add(prato2_mcDonalds);
 
         Pratos prato3_mcDonalds = new Pratos();
-        prato3_mcDonalds.setNomePrato("Novo McFlurry e McShake Sonho de Valsa");
+        prato3_mcDonalds.setNomePrato("McLanche Feliz");
         prato3_mcDonalds.setFotoPrato(R.drawable.restaurant1_prato3);
-        prato3_mcDonalds.setDescricaoPrato("Experimente e ame você também.");
+        prato3_mcDonalds.setDescricaoPrato("As combinações mais deliciosas para criançada comer e se divertir. Mini Tasty com Tomatinhos, Água Mineral e Danoninho.");
         restaurante1.getListaDePratos().add(prato3_mcDonalds);
 
         Pratos prato4_mcDonalds = new Pratos();
